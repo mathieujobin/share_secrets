@@ -5,17 +5,14 @@ require 'byebug'
 
 RSpec.describe 'foo namespace rake task' do
 	before :all do
-		#Rake.application.rake_require "tasks/bar"
-		#debugger
 		Rake.application.init
 		Rake.application.load_rakefile
-		#Rake::Task.define_task(:environment)
 	end
 
 	describe 'foo:bar' do
 		before do
-			BarOutput.stub(:banner)
-			BarOutput.stub(:spit)
+			allow_any_instance_of(BarOutput).to receive(:banner).and_return(false)
+			allow_any_instance_of(BarOutput).to receive(:spit).and_return(false)
 		end
 
 		let :run_rake_task do
@@ -24,17 +21,17 @@ RSpec.describe 'foo namespace rake task' do
 		end
 
 		it "should bake a bar" do
-			Bar.any_instance.should_receive :bake
+			expect_any_instance_of(Bar).to receive(:bake).and_return(:return_value)
 			run_rake_task
 		end
 
 		it "should bake a bar again" do
-			Bar.any_instance.should_receive :bake
+			expect_any_instance_of(Bar).to receive(:bake).and_return(:return_value)
 			run_rake_task
 		end
 
 		it "should output two banners" do
-			BarOutput.should_receive(:banner).twice
+			expect(BarOutput).to receive(:banner).twice
 			run_rake_task
 		end
 
