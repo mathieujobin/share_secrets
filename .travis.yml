@@ -6,5 +6,5 @@ rvm:
   - rbx-2.1.1
   - 1.8.7
   - ree
-script: rake spec
+script: rspec spec
 
