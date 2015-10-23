@@ -1,5 +1,5 @@
 #File: lib/tasks/bar.rake
-require 'byebug'
+#require 'byebug'
 
 class Bar
 	def bake
