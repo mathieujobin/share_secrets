@@ -6,5 +6,7 @@ rvm:
   - rbx-2.1.1
   - 1.8.7
   - ree
-script: rspec spec
+  - 2.1.5
+  - 2.2.3
+script: bundle exec rspec specs
 
