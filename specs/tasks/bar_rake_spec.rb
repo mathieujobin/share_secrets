@@ -1,7 +1,7 @@
 #File: spec/tasks/bar_rake_spec.rb
 #require 'spec_helper'
 require 'rake'
-require 'byebug'
+#require 'byebug'
 
 RSpec.describe 'foo namespace rake task' do
 	before :all do
