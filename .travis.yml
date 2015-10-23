@@ -10,6 +10,6 @@ rvm:
   - 2.2.3
 matrix:
   allow_failures:
-    - rbx-2.1.1
+    - rvm: rbx-2.1.1
 script: bundle exec rspec specs
 
