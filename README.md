@@ -1,8 +1,10 @@
-= Share Secrets =
+# Share Secrets
 
 This repo aims at making sharing secrets easy.
 
-== Getting Started ==
+[![Build Status](https://travis-ci.org/mathieujobin/share_secrets.svg?branch=master)](https://travis-ci.org/mathieujobin/share_secrets)
+
+## Getting Started
 
 Clone this repo
 ```bash
@@ -14,6 +16,7 @@ TODO:
 
 * write tests
 * help usage
+* multiplatform install of deps
 * find key of key server, download to all
 * add/remove keys from member dir
 * encrypt data in secrets folder
