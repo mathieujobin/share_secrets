@@ -15,11 +15,4 @@ rake help
 TODO:
 
 * write tests
-* help usage
-* multiplatform install of deps
-* find key of key server, download to all
-* add/remove keys from member dir
-* encrypt data in secrets folder
-* make diff of unencrypted output and encrypted data
-* delete unencrypted data
 

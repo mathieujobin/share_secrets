@@ -1,0 +1,46 @@
+#!/usr/bin/env ruby
+require "thor"
+
+class ShareSecretsGPG < Thor
+  desc "setup", "multiplatform install of deps"
+  def setup
+    puts 'not implemented'
+  end
+
+  desc "find PATTERN", "find key off key server, download to all"
+  def find(pattern)
+    puts 'not implemented'
+  end
+
+  desc "list", "list keys in members dir"
+  def list
+    puts 'not implemented'
+  end
+
+  desc "add KEY", "add keys to members dir"
+  def add(key)
+    puts 'not implemented'
+  end
+
+  desc "remove KEY", "remove keys from members dir"
+  def remove(key)
+    puts 'not implemented'
+  end
+
+  desc "encrypt", "encrypt data in secrets folder"
+  def encrypt
+    puts 'not implemented'
+  end
+
+  desc "diff", "make and display diff of unencrypted output and encrypted data"
+  def diff
+    puts 'not implemented'
+  end
+
+  desc "trash", "delete unencrypted data"
+  def trash
+    puts 'not implemented'
+  end
+end
+
+ShareSecretsGPG.start(ARGV)
